@@ -5933,19 +5933,24 @@ table.hide-for-medium {
     margin: 0;
   }
 }
-/* line 53, ../sass/app.scss */
+/* line 52, ../sass/app.scss */
+header {
+  border-top: 5px solid #cb6b2b;
+}
+
+/* line 54, ../sass/app.scss */
 #hero {
   background-color: #292929;
   min-height: 400px;
 }
 
-/* line 55, ../sass/app.scss */
+/* line 56, ../sass/app.scss */
 #why {
   background-color: #E9EAEB;
   min-height: 600px;
 }
 
-/* line 57, ../sass/app.scss */
+/* line 58, ../sass/app.scss */
 footer {
   background-color: #cb6b2b;
   min-height: 100px;

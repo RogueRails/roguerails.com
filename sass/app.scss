@@ -49,6 +49,7 @@
 // Media Queries Overrides
 // @import "foundation/components/modules/mqueries";
 
+header { border-top: 5px solid $mainColor; }
 
 #hero { background-color: #292929; min-height: 400px; }
 
