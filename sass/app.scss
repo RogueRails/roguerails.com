@@ -1,65 +1,255 @@
-// Your custom settings file to override Foundation defaults
+// Global Foundation Settings
 @import "settings";
+
+// Comment out this import if you don't want to use normalize
+@import "normalize";
 
 // Comment out this import if you are customizing you imports below
 @import "foundation";
 
-// ----------------------------------------
-// Import specific parts of Foundation by commenting the import "foundation"
-// and uncommenting what you want below. You must uncomment the following if customizing
 
-// @import "compass/css3";
-// @import "foundation/settings";
-// @import "foundation/functions/all";
-
-// Control which mixins you have access too
-
-// @import "foundation/mixins/clearfix";
-// @import "foundation/mixins/css-triangle";
-// @import "foundation/mixins/font-size";
-
-// Must include next two for semantic grid to work
-
-// @import "foundation/mixins/respond-to";
-// @import "foundation/mixins/semantic-grid";
-
-// @import "modular-scale";
-// @import "foundation/common/globals";
-
-// Must include the grid for any responsiveness
-
-// @import "foundation/components/grid";
-
-// Control which common styles get compiled
-
-// @import "foundation/common/typography";
-// @import "foundation/common/forms";
-
-// Control which components you get if customizing
-
-// @import "foundation/components/modules/buttons";
-// @import "foundation/components/modules/tabs";
-// @import "foundation/components/modules/ui";
-// @import "foundation/components/modules/topbar";
-// @import "foundation/components/modules/navbar";
-// @import "foundation/components/modules/orbit";
-// @import "foundation/components/modules/reveal";
-// @import "foundation/components/modules/offcanvas";
-
-// Media Queries Overrides
-// @import "foundation/components/modules/mqueries";
-
-header { border-top: 5px solid $mainColor; }
-
-#hero { background-color: #292929; min-height: 400px; }
-
-#why { background-color: #E9EAEB; min-height: 600px; }
-
-footer { background-color: $mainColor; min-height: 100px; }
-
-// HOLDING SITE
-#brand {
-	text-align: center;
+.logo {
+  display: block;
+  margin: 20px auto 40px;
+}
+.floating-logo {
+  display: none;
+  position: fixed;
+  right: 40px;
+  bottom: 0px;
+  .logo {
+    width: 80px;
+  }
+}
+.main-navigation {
+  background-image: -o-linear-gradient(-90deg, #FFFFFF 0%, #FAFAFA 100%);
+  background-image: -moz-linear-gradient(-90deg, #FFFFFF 0%, #FAFAFA 100%);
+  background-image: -webkit-linear-gradient(-90deg, #FFFFFF 0%, #FAFAFA 100%);
+  background-image: -ms-linear-gradient(-90deg, #FFFFFF 0%, #FAFAFA 100%);
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #FAFAFA 100%);
+  -moz-box-shadow:    0px 1px 4px 0px rgba(0,0,0,0.25), inset 0px 1px 0px 0px #FFFFFF;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25), inset 0px 1px 0px 0px #FFFFFF;
+  box-shadow:         0px 1px 4px 0px rgba(0,0,0,0.25), inset 0px 1px 0px 0px #FFFFFF;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  li {
+    padding-bottom: 0;
+    text-align: center;
+    a {
+      display: inline-block;
+      font-family: HelveticaNeue-Light;
+      font-size: 22px;
+      color: #7E7E7E;
+      line-height: 27px;
+      padding-bottom: 35px;
+      padding-top: 35px;
+      text-transform: uppercase;
+      &:hover, &.selected {
+        color: $primary-color;
+      }
+    }
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+}
+h2 {
+  font-family: "Century Gothic", "Apple Gothic", sans-serif;
+  font-size: emCalc(54px);
+  font-weight: 100;
+  color: #FFFFFF;
+  line-height: 70px;
+  text-align: center;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
 }
 
+section {
+  min-height: 600px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+#welcome {
+  background: #4B7506;
+  background: #4A4A4A;
+  background-image: -o-linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(0,0,0,0.11) 100%);
+  background-image: -moz-linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(0,0,0,0.11) 100%);
+  background-image: -webkit-linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(0,0,0,0.11) 100%);
+  background-image: -ms-linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(0,0,0,0.11) 100%);
+  background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, rgba(0,0,0,0.11) 100%);
+  -moz-box-shadow:    0px 3px 3px 0px rgba(0,0,0,0.36);
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.36);
+  box-shadow:         0px 3px 3px 0px rgba(0,0,0,0.36);
+  color: #fff;
+  margin-top: 80px;
+  overflow: hidden;
+  z-index: 10;
+  h4.date {
+    font-family: HelveticaNeue-Light;
+    font-size: emCalc(35px);
+    color: #FFFFFF;
+    line-height: 70px;
+    text-align: center;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+  }
+  h3, h4, h5, .date {
+    color: #fff;
+    text-align: center;
+  }
+}
+#speakers {
+  @extend #welcome;
+  margin-top: 0;
+  background: #f5efe5;
+  color: #777;
+  z-index: 20;
+  .speaker-avatar {
+    border-radius: 120px;
+    -moz-box-shadow:    0px 0px 3px 0px #a3a3a3;
+    -webkit-box-shadow: 0px 0px 3px 0px #a3a3a3;
+    box-shadow:         0px 0px 3px 0px #a3a3a3;
+  }
+  h2, h3, h5 {
+    color: #CF5D4B;
+    text-shadow: none;
+  }
+  h5, h6 {
+    margin-bottom: .08em;
+  }
+  h6 {
+    font-size: .9em;
+    color: #999;
+    a {
+      color: #999;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  h3 {
+    text-align: center;
+  }
+}
+.speaker-name {
+  text-align: left !important;
+}
+#locations {
+  @extend #welcome;
+  margin-top: 0;
+  min-height: 800px;
+  background: #596D46;
+  background: url('../images/bigham-knoll-colored.jpg') no-repeat left top;
+  background-size: 100% auto;
+  border: 1px solid #979797;
+  text-align: center;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+  h2, h3, h4, h5 {
+    color: #fff;
+    text-align: center;
+  }
+  h3 {
+    font-size: emCalc(35px);
+    margin-bottom: 0;
+  }
+  h4 {
+    display: inline-block;
+    background-color: rgb(46, 156, 94);
+    border-radius: 200px;
+    padding: 50px 25px;
+    width: auto;
+    font-size: emCalc(16px);
+    text-shadow: none;
+  }
+  .address {
+    font-weight: normal;
+    font-size: emCalc(18px);
+  }
+  .location {
+    margin-bottom: 60px;
+  }
+}
+#schedule {
+  background: #fff url('../images/body_bg_paper.jpg') repeat;
+  h2, h3, h5 {
+    
+  }
+}
+#sponsors {
+  @extend #welcome;
+  margin-top: 0;
+  background: #9CB4B2;
+  border: 1px solid #979797;
+  h2, h3, h4, h5 {
+    color: #fff;
+    text-align: center;
+  }
+}
+#footer {
+  background: #f5efe5;
+}
 
+.register-link {
+  display: block;
+  border-radius: 6px;
+  background: #D25E4C;
+  background-image: -o-linear-gradient(-90deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.23) 100%);
+  background-image: -moz-linear-gradient(-90deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.23) 100%);
+  background-image: -webkit-linear-gradient(-90deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.23) 100%);
+  background-image: -ms-linear-gradient(-90deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.23) 100%);
+  background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.23) 100%);
+  border: 1px solid #D58477;
+  -moz-box-shadow:    0px 2px 4px 0px rgba(0,0,0,0.50);
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  box-shadow:         0px 2px 4px 0px rgba(0,0,0,0.50);
+  font-family: HelveticaNeue-Bold;
+  font-size: emCalc(25px);
+  color: #FFFFFF;
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.50);
+  span {
+    font-family: HelveticaNeue-light;
+    font-size: emCalc(14px);
+    font-weight: 300;
+  }
+}
+.workshop-reg, .conference-reg {
+  border-radius: 6px;
+  background: rgba(215,215,215,0.10);
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+  h4 {
+    font-size: 1em;
+    letter-spacing: .01em;
+    color: #ccc !important;
+    font-weight: 200;
+    strong {
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+  .date {
+    font-size: 1.4em;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+.speaker {
+  border-radius: 6px;
+  background: #FFFFFF;
+  background-image: -o-linear-gradient(-90deg, rgba(255,255,255,0.50) 0%, #FAFAFA 100%);
+  background-image: -moz-linear-gradient(-90deg, rgba(255,255,255,0.50) 0%, #FAFAFA 100%);
+  background-image: -webkit-linear-gradient(-90deg, rgba(255,255,255,0.50) 0%, #FAFAFA 100%);
+  background-image: -ms-linear-gradient(-90deg, rgba(255,255,255,0.50) 0%, #FAFAFA 100%);
+  background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, #FAFAFA 100%);
+  border: 1px solid #E3E3E3;
+  -moz-box-shadow:    1px 1px 2px 0px rgba(0,0,0,0.20), inset 0px -1px 3px 0px #FFFFFF;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.20), inset 0px -1px 3px 0px #FFFFFF;
+  box-shadow:         1px 1px 2px 0px rgba(0,0,0,0.20), inset 0px -1px 3px 0px #FFFFFF;
+  margin-bottom: 35px !important;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}

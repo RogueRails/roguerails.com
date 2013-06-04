@@ -1,84 +1,224 @@
-<!DOCTYPE html>
 
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
 <head>
 	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>See you at Rogue Rails!</title>
 
-	
-	<title>See you at Rogue Rails!</title>
+  
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  
 
-	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/app.css">
-
-	<script src="javascripts/foundation/modernizr.foundation.js"></script>
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
 
 </head>
 <body>
-	<div class="row">
-		<div id="brand" class="large-12">
-			<img src="images/roguerails-logo.png" alt="Rogue Rails*">
-		</div>
-	</div>
-	<div class="row">
-		<div id="dates" class="large-12">
-			<h2>October 23-26, 2013</h2>
-			<p>Southern Oregon &bullet; Registration Opening May 15</p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="large-12">
-			<h2>A Premier Agile TDD Ruby on Rails Workshop and Conference!</h2>
-		</div>
-	</div>
-	<div class="footer row">
-		<p>Hosted by <a href="http://www.codingzeal.com" target="_blank">ZEAL</a></p>
-	</div>
-	
 
-	<!-- Included JS Files (Uncompressed) -->
-	<script src="javascripts/foundation/jquery.js"></script>
-	
-	<script src="javascripts/foundation/jquery.cookie.js"></script>
-	
-	<script src="javascripts/foundation/jquery.event.move.js"></script>
-	
-	<script src="javascripts/foundation/jquery.event.swipe.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.clearing.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.forms.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.joyride.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.magellan.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.topbar.js"></script>
-	
-	<script src="javascripts/foundation/jquery.placeholder.js"></script>
-	
+	<div class="row">
+		<div class="small-12 small-centered columns">
+			<img class="logo" src="images/roguerails-logo.png" alt="Rogue Rails">
+		</div>
+	</div>
 
-  <!-- Application Javascript, safe to override -->
-  <script src="javascripts/foundation/app.js"></script>
+	<div class="main-navigation hide-for-small">
+    <nav class="row">
+      <ul class="small-block-grid-5">
+        <li><a href="#welcome" title="">Welcome</a></li>
+        <li><a href="#speakers" title="">Speakers</a></li>
+        <li><a href="#locations" title="">Locations</a></li>
+        <li><a href="#schedule" title="">Schedule</a></li>
+        <li><a href="#sponsors" title="">Sponsors</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section id="welcome">
+    <div class="row">
+      <div class="large-12 columns">
+        <div id="greeting" class="twelve columns">
+          <h2>A Premier <span style="display: inline-block; width: 350px;"><strong>Ruby on Rails</strong></span><br/>
+              Workshop and Conference!</h2>
+          <div class="the-descriptors" style="display:none;">
+            <span style="width: 150px;">Agile</span>
+            <span style="width: 100px;">TDD</span>
+            <span style="width: 470px;">Pair Programming</span>
+            <span style="width: 350px;">Ruby on Rails</span>
+          </div>
+        </div>
+        <h4 class="date">October 23 - 26, 2013 &bullet; Southern Oregon</h4>
+        <div class="registration">
+          <div class="row">
+            <a class="register-link large button large-5 large-centered columns">
+              Register Now<br/>
+              <span>Both Workshop &amp; Conference</span>
+            </a>
+          </div>
+
+          <div class="row">
+            <div class="workshop-reg small-5 columns">
+              <h3>The Workshop</h3>
+              <h4>Featuring <strong>Ryan Bates</strong> of <strong>Railscasts</strong></h4>
+              <p class="date">October 23 - 25</p>
+              <a class="register-link secondary button small large-7 large-centered columns">Register Now</a>
+            </div>
+
+            <div class="conference-reg small-5 columns">
+              <h3>The Conference</h3>
+              <h4>Featuring <strong>Kent Beck</strong>, father of <strong>Extreme Programming</strong></h4>
+              <p class="date">October 26</p>
+              <a class="register-link secondary button small large-7 large-centered columns">Register Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="speakers">
+    <div class="row">
+      <div class="large-12 columns">
+        <h2>Workshop Facilitators</h2>
+        <article class="speaker row">
+          <div class="large-2 columns">
+            <img class="speaker-avatar" src="images/ryan-bates-sq.jpg" alt="Ryan Bates">
+          </div>
+          <div class="large-4 columns">
+            <h5 class="speaker-name">Ryan Bates</h5>
+            <h6 class="speaker-title">Owner &amp; Producer</h6>
+            <h6 class="speaker-company"><a href="http://www.railscasts.com" title="Railscasts">Railscasts</a></h6>
+          </div>
+          <div class="large-6 columns">
+            Ryan helps thousands of developers learn Ruby on Rails, as well as javascript frameworks and all things Rails-related, on his self-produced screencast site, <a href="http://www.railscasts.com" target="_blank">Railscasts</a>. Ryan is excited to bring his teaching skills into a live in-person workshop for the first time ever!
+          </div>
+        </article>
+
+        <article class="speaker row">
+          <div class="large-2 columns">
+            <img class="speaker-avatar" src="images/zeal.jpg" alt="ZEAL">
+          </div>
+          <div class="large-4 columns">
+            <h5 class="speaker-name">The ZEAL Team</h5>
+            <h6 class="speaker-title">Rob, Adam, Trever & Sean</h6>
+            <h6 class="speaker-company"><a href="http://www.codingzeal.com" title="Zeal">Zeal</a></h6>
+          </div>
+          <div class="large-6 columns">
+            ZEAL is a dev studio built on a passion for Rails, TDD, pair programming, and the Agile process.  
+
+            Zeal's desire to spread this knowledge and passion inspired the creation of the Rogue Rails workshop and conference.
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h2>Conference Presenters</h2>
+        <article class="speaker row">
+          <div class="large-2 columns">
+            <img class="speaker-avatar" src="images/kent-beck-sq.jpg" alt="Kent Beck">
+          </div>
+          <div class="large-4 columns">
+            <h5 class="speaker-name">Kent Beck</h5>
+            <h6 class="speaker-title">Author &amp; Developer</h6>
+            <h6 class="speaker-company"><a href="http://www.facebook.com" title="Facebook">Facebook</a></h6>
+          </div>
+          <div class="large-6 columns">
+            Kent Beck is the creator of <a href="">Extreme Programing</a> and <a href="">Test Driven Development</a>, as well as the first signatory of the <a href="">Agile Manefesto</a>. He has written several books on development that have pushed the industry forward. Do not miss this rare opportunity to work directly with Kent.
+          </div>
+        </article>
+
+        <article class="speaker row">
+          <div class="large-2 columns">
+            <img class="speaker-avatar" src="images/sarah-mei-bw.jpg" alt="Sarah Mei">
+          </div>
+          <div class="large-4 columns">
+            <h5 class="speaker-name">Sarah Mei</h5>
+            <h6 class="speaker-title">Developer &amp; Speaker</h6>
+            <h6 class="speaker-company"><a href="http://www.pivotallabs.com" title="Pivotal Labs">Pivotal Labs</a></h6>
+          </div>
+          <div class="large-6 columns">
+            Sarah is a senior developer at <a href="">Pivotal Labs</a> and co-founder of <a href="">RailsBridge</a>, a non-profit organization dedicated to keeping Ruby on Rails communities friendly, vibrant and welcoming to people of all backgrounds.
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <h3 class="announcement">more to be anounced shortly...</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="locations">
+    <div class="row">
+      <div class="large-12 columns">
+        <h2>Event Locations</h2>
+      </div>
+    </div>
+    <div class="row">
+      <article class="location large-5 columns">
+        <h4>Workshop</h4>
+        <h3>Imperial Event Center</h3>
+        <p class="address">40 North Front Street, Medford, OR 97501</p>
+        <a class="register-link small button" style="width:auto; display: inline-block;" href="http://goo.gl/maps/UPrmP" title="Imperial Event Center, 40 North Front Street, Medford, OR" target="_blank">View on Map</a>
+      </article>
+    
+      <article class="location large-5 columns">
+        <h4>Conference</h4>
+        <h3>Bigham Knoll Campus</h3>
+        <p class="address">525 Bigham Knoll, Jacksonville, OR 97530</p>
+        <a class="register-link small button" style="width:auto; display: inline-block;" href="http://goo.gl/maps/VDYRG" title="Bigham Knoll Campus, 525 Bigham KNoll Dr, Jacksonville, OR" target="_blank">View on Map</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="row">
+      <div class="large-12 columns">
+        <h2>Workshop &amp; Conference Schedule</h2>
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsors">
+    <div class="row">
+      <h2>Sponsors</h2>
+    </div>
+  </section>
+
+  <section id="footer">
+    <footer>
+      
+    </footer>
+  </section>
+  
+  <div class="floating-logo">
+    <img class="logo" src="images/roguerails-logo.png" alt="Rogue Rails">
+  </div>
+
+  <script src="javascripts/vendor/jquery.min.js"></script>
+  <script src="javascripts/foundation/foundation.js"></script>
+	<script src="javascripts/foundation/foundation.alerts.js"></script>
+	<script src="javascripts/foundation/foundation.clearing.js"></script>
+	<script src="javascripts/foundation/foundation.cookie.js"></script>
+	<script src="javascripts/foundation/foundation.dropdown.js"></script>
+	<script src="javascripts/foundation/foundation.forms.js"></script>
+	<script src="javascripts/foundation/foundation.joyride.js"></script>
+	<script src="javascripts/foundation/foundation.magellan.js"></script>
+	<script src="javascripts/foundation/foundation.orbit.js"></script>
+	<script src="javascripts/foundation/foundation.placeholder.js"></script>
+	<script src="javascripts/foundation/foundation.reveal.js"></script>
+	<script src="javascripts/foundation/foundation.section.js"></script>
+	<script src="javascripts/foundation/foundation.tooltips.js"></script>
+	<script src="javascripts/foundation/foundation.topbar.js"></script>
+	
+  <script>
+    $(document).foundation();
+  </script>
+  <script src="javascripts/scripts.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
