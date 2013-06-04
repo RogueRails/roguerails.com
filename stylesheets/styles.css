@@ -1,8 +1,17 @@
 body {
-	background: rgb(250,250,250) url('../images/bg-texture.png') repeat;
+	background: rgb(25,25,25) url('../images/bg-texture.png') repeat;
 	text-align: center;
-	color: rgb(102,102,102);
+	color: rgb(200,210,210);
 	font-family: ff-unit-slab-web, Georgia, 'Times New Roman', serif;
+}
+a {
+	color: rgb(200,255,255);
+}
+a:visited {
+	color: rgb(200,255,255);
+}
+a:hover {
+	color: rgb(255,255,255);
 }
 *, *:before, *:after {
  	-webkit-box-sizing: border-box;
