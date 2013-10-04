@@ -1,0 +1,397 @@
+// Comment out this import if you don't want to use normalize
+// @import "normalize";
+
+@import "partials/layout";
+@import "partials/typography";
+@import "third-party/general_enclosed_foundicons";
+
+@import "modules/navigation";
+
+.logo {
+  display: block;
+  margin: 20px auto 40px;
+  max-width: 200px;
+}
+.floating-logo {
+  display: none;
+  position: fixed;
+  right: 40px;
+  bottom: 0px;
+  .logo {
+    width: 80px;
+  }
+}
+
+.section-header {
+  border-top: 2px solid $color-1;
+  display: block;
+  text-align: center;
+  h2 {
+    background-color: #f5efe5;
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+    margin-top: -40px;
+  }
+  .section-dates {
+    color: #999;
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: .9;
+    margin-bottom: 10px;
+    @media screen and (max-width: $small-screen) {
+      font-size: 1.1em; 
+    }
+    a {
+      color: #777;
+      &:hover {
+        color: $color-1;
+      }
+      i {
+        color: $color-1;
+      }
+    }
+  }
+}
+.location {
+  max-width: 400px !important;
+  h4 {
+    color: #777 !important;
+  }
+  .register-link {
+    margin-top: 10px;
+  }
+  iframe {
+    border: 2px solid #aaa;
+    border-radius: 8px;
+  }
+}
+
+.footnote {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: .9;
+  margin-bottom: -68px;
+  text-align: center;
+  margin-top: 60px;
+  background-color: #d25e4c;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+#welcome {
+  background: #336846 url('/assets/bigham-knoll-colored.jpg') no-repeat left top;
+  background-size: 100% auto;
+  -moz-box-shadow:    0px 3px 3px 0px rgba(0,0,0,0.36);
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.36);
+  box-shadow:         0px 3px 3px 0px rgba(0,0,0,0.36);
+  color: #fff;
+  margin-top: 80px;
+  overflow: hidden;
+  z-index: 10;
+  @media screen and (max-width: $small-screen) {
+    background-size: auto 100%;
+    background-position: center top;
+  }
+  h4.date {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-weight: 300;
+    font-size: emCalc(30px);
+    color: #FFFFFF;
+    line-height: 70px;
+    text-align: center;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+    @media screen and (max-width: $small-screen) {
+      font-size: emCalc(18px);
+      font-weight: 900;
+      line-height: 1;
+    }
+  }
+  h3, h4, h5, .date {
+    position: relative;
+    color: #fff;
+    text-align: center;
+  }
+}
+.intro-statement {
+  font-weight: 300;
+  @media screen and (max-width: $small-screen) {
+    line-height: 1;
+  }
+  span {
+    display: inline-block;
+    width: 355px;
+    @media screen and (max-width: $small-screen) {
+      display: block;
+      width: 100% !important;
+      height: 1em;
+      margin: 0;
+    }
+  }
+}
+.earlybird {
+  position: absolute;
+  top: -65px;
+  right: -57px;
+}
+.social-icons {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.4286;
+  display: block;
+  list-style-type: disc;
+  li {
+    list-style: none;
+  }
+  .icon {
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 62px 62px;
+    color: #fff;
+    padding-left: 74px;
+    padding-top: 16px;
+    height: 64px;
+    display: inline-block;
+  }
+  .twitter {
+    background-image: url('/assets/twitter-icon.png');
+  }
+  .lanyrd {
+    background-image: url('lanyrd-icon.png');
+  }
+}
+
+#workshop {
+  @extend #welcome;
+  padding-bottom: 0;
+  margin-top: 0;
+  background: #f5efe5;
+  color: #777;
+  z-index: 20;
+  h2, h5 {
+    color: #CF5D4B;
+    text-shadow: none;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  h3 {
+    text-align: center;
+    font-size: 2.8em;
+    color: #4a4a4a;
+    @media screen and (max-width: $small-screen) {
+      font-size: 1.8em;
+    }
+  }
+}
+.workshop-sub-tagline {
+  font-size: emCalc(36px);
+  font-weight: 200;
+  color: $color-1;
+  text-align: center;
+  @media screen and (max-width: $small-screen) {
+    font-size: emCalc(26px);
+  }
+}
+.workshop-what-list {
+  margin-left: 20px;
+  list-style-type: none;
+
+  li {
+    background: url('right-arrow.png') 0px 9px no-repeat;
+    font-size: emCalc(20px);
+    color: #666;
+    padding-left: 20px;
+    @media screen and (max-width: $small-screen) {
+      font-size: emCalc(18px);
+    }
+    span {
+      display: block;
+      color: #9B9B9B;
+      font-size: .8em;
+      margin-bottom: 7px;
+      line-height: 1em;
+    }
+  }
+}
+.workshop-facilitators {
+  padding-top: 20px;
+}
+
+#conference {
+  background-color: #fff; // #9CB4B2;
+  border-top: 10px solid #AFAFAF;
+  border-bottom: 10px solid #AFAFAF;
+  margin-top: 0;
+  padding-bottom: 0;
+  h2 {
+    background-color: #fff;
+    color: $color-1;
+    margin-bottom: 0;
+    text-shadow: none;
+  }
+  h3 {
+    text-align: center;
+    font-size: 2.8em;
+    color: #4a4a4a;
+    @media screen and (max-width: $small-screen) {
+      font-size: 1.6em;
+    }
+  }
+  .conf-main-tagline {
+    text-align: center;
+    font-size: 3.2em;
+    color: #4a4a4a;
+    line-height: 1.2;
+    @media screen and (max-width: $small-screen) {
+      font-size: 1.6em;
+    }
+  }
+  .conf-sub-tagline {
+    text-align: center;
+    color: #4a4a4a;
+    a {
+      font-weight: bold;
+    }
+  }
+  .conf-desc-info {
+    color: #4a4a4a;
+  }
+  .conf-what-list {
+    @extend .workshop-what-list;
+  }
+}
+
+#schedule {
+  background: #fff url('/assets/body_bg_paper.jpg') repeat;
+  h2, h3, h5 {
+    
+  }
+}
+#sponsors {
+  @extend #welcome;
+  margin-top: 0;
+  background: #fff;
+  color: #777;
+  z-index: 20;
+  h2 {
+    color: $color-1;
+    text-shadow: none;
+    background-color: #fff;
+  }
+  h3, h5 {
+    color: #4a4a4a;
+    text-shadow: none;
+  }
+}
+#footer {
+  box-shadow: inset 0 1px 4px rgba(0,0,0,0.25);
+  min-height: 200px;
+  background: #f5efe5;
+  h4 {
+    color: #777;
+    border-bottom: 2px solid #cacaca;
+  }
+}
+.location-name {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 3px;
+  a {
+    text-decoration: underline;
+  }
+}
+.location-desc {
+  font-size: .9em;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+.location-phone {
+  font-size: 1em;
+  font-weight: bold;
+  color: #999;
+}
+
+.register-link {
+  display: block;
+  border-radius: 6px;
+  background: #D25E4C;
+  background-image: -o-linear-gradient(-90deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.23) 100%);
+  background-image: -moz-linear-gradient(-90deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.23) 100%);
+  background-image: -webkit-linear-gradient(-90deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.23) 100%);
+  background-image: -ms-linear-gradient(-90deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.23) 100%);
+  background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.23) 100%);
+  border: 1px solid #D58477;
+  -moz-box-shadow:    0px 2px 4px 0px rgba(0,0,0,0.50);
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  box-shadow:         0px 2px 4px 0px rgba(0,0,0,0.50);
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-weight: bold;
+  font-size: emCalc(25px);
+  color: #FFFFFF;
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.50);
+  margin-bottom: 70px;
+  margin-top: 30px;
+  span {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: emCalc(14px);
+    font-weight: 300;
+  }
+}
+.workshop-reg, .conference-reg {
+  border-radius: 6px;
+  background: rgba(3,3,3,0.40);
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+  h4 {
+    font-size: 1em;
+    letter-spacing: .01em;
+    color: #ccc !important;
+    font-weight: 200;
+    strong {
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+  .date {
+    font-size: 1.4em;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: .9em;
+  }
+}
+
+.floating-cta {
+  position: fixed;
+  z-index: 2000;
+  top: -2px;
+  right: 30px;
+  .register-link {
+    padding: 12px 25px;
+  }
+}
+
+#footer-copyright {
+  background-color: #777;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-height: 0;
+  p {
+    margin-bottom: 0;
+    font-size: .9em;
+  }
+}
+
+@import "modules/speakers";
+@import "modules/sponsors";

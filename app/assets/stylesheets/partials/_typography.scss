@@ -1,0 +1,12 @@
+h2 {
+  font-size: emCalc(54px);
+  font-weight: 200;
+  color: #FFFFFF;
+  line-height: 70px;
+  text-align: center;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+  @media screen and (max-width: $small-screen) {
+    font-size: emCalc(26px); 
+  	line-height: 30px;
+  }
+}

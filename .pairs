@@ -1,0 +1,11 @@
+pairs:
+  rh: Rob Head
+  ty: Trever Yarrish
+  ac: Adam Cuppy
+  sc: Sean Culver
+
+email:
+  prefix: pair
+  domain: codingzeal.com
+
+global: true

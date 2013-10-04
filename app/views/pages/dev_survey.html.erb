@@ -1,0 +1,68 @@
+  <div class="row">
+    <div class="small-12 small-centered columns">
+      <%= image_tag "roguerails-logo.png", class: "logo", alt: "Rogue Rails" %>
+    </div>
+  </div>
+
+  <section id="workshop">
+    <div class="row">
+      <div class="large-12 columns">
+        <header class="section-header">
+          <h2>Workshop</h2>
+          <p class="section-dates">October 23 - 25 |
+            <strong>
+              <a href="#" data-dropdown="imperialContent">Imperial Event Center <i class="foundicon-location"></i></a>
+            </strong></p>
+          <div id="imperialContent" class="location f-dropdown content" data-dropdown-content>
+            <h4>Imperial Event Center</h4>
+            <p class="address">40 North Front Street, Medford, OR 97501</p>
+            <iframe width="325" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=40+north+front+street,+medford,+or&amp;hl=en&amp;sll=42.334151,-123.248047&amp;sspn=0.7492,1.356812&amp;hnear=40+N+Front+St,+Medford,+Jackson,+Oregon+97501&amp;t=m&amp;ie=UTF8&amp;hq=&amp;ll=42.326824,-122.873411&amp;spn=0.012691,0.027809&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <%= link_to "View Larger Map", "http://goo.gl/maps/UPrmP", class: "register-link small button", style: "width:auto; display: inline-block;", title: "Imperial Event Center, 40 North Front Street, Medford, OR", target: "_blank" %>
+          </div>
+        </header>
+        <div class="workshop-hook row">
+          <h3 class="workshop-main-tagline">Pre-Attendance Developer Survey</h3>
+          <p style="text-align:center;">Please answer the questions as best you can. Filling out this information will help us create pairs and teams.</p>
+          <hr>
+        </div>
+        <div class="workshop-dev-survey row">
+          <div class="large-10 large-centered columns">
+            <div id="wufoo-m7p7q1">
+              Fill out the survey <a href="http://defineyouredge.wufoo.com/forms/m7p7q1">online form</a>.
+            </div>
+            <script type="text/javascript">var m7p7q1;(function(d, t) {
+            var s = d.createElement(t), options = {
+            'userName':'defineyouredge', 
+            'formHash':'m7p7q1', 
+            'autoResize':true,
+            'height':'2076',
+            'async':true,
+            'header':'hide', 
+            'ssl':true};
+            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+            s.onload = s.onreadystatechange = function() {
+            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try { m7p7q1 = new WufooForm();m7p7q1.initialize(options);m7p7q1.display(); } catch (e) {}};
+            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+            })(document, 'script');</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="footer-copyright">
+    <div class="row">
+      <div class="large-12 columns">
+        <p class="copyright-info">&copy;2013 Rogue Rails, LLC</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="floating-logo">
+    <%= image_tag "roguerails-logo.png", class: "logo", alt: "Rogue Rails" %>
+  </div>
+
+  <style type="text/css">
+    #workshop { box-shadow: inset 0 2px 2px #ccc; }
+  </style>

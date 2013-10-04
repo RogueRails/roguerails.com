@@ -1,0 +1,42 @@
+.main-navigation {
+  background-image: -o-linear-gradient(-90deg, #FFFFFF 0%, #FAFAFA 100%);
+  background-image: -moz-linear-gradient(-90deg, #FFFFFF 0%, #FAFAFA 100%);
+  background-image: -webkit-linear-gradient(-90deg, #FFFFFF 0%, #FAFAFA 100%);
+  background-image: -ms-linear-gradient(-90deg, #FFFFFF 0%, #FAFAFA 100%);
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #FAFAFA 100%);
+  -moz-box-shadow:    0px 1px 4px 0px rgba(0,0,0,0.25), inset 0px 1px 0px 0px #FFFFFF;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25), inset 0px 1px 0px 0px #FFFFFF;
+  box-shadow:         0px 1px 4px 0px rgba(0,0,0,0.25), inset 0px 1px 0px 0px #FFFFFF;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  li {
+    padding-bottom: 0;
+    text-align: center;
+    a {
+      display: inline-block;
+      font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+      font-size: 22px;
+      color: #7E7E7E;
+      line-height: 27px;
+      padding-bottom: 35px;
+      padding-top: 35px;
+      text-transform: uppercase;
+      &:hover, &.selected {
+        color: $primary-color;
+      }
+    }
+    .register-link {
+      color: #fff;
+      margin-bottom: 0;
+      margin-top: 26px;
+      &:hover, &.selected {
+        color: #fff;
+      }
+    }
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+}

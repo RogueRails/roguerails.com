@@ -1,0 +1,103 @@
+.speaker {
+  border-radius: 6px;
+  background: #FFFFFF;
+  background-image: -o-linear-gradient(-90deg, rgba(255,255,255,0.50) 0%, #FAFAFA 100%);
+  background-image: -moz-linear-gradient(-90deg, rgba(255,255,255,0.50) 0%, #FAFAFA 100%);
+  background-image: -webkit-linear-gradient(-90deg, rgba(255,255,255,0.50) 0%, #FAFAFA 100%);
+  background-image: -ms-linear-gradient(-90deg, rgba(255,255,255,0.50) 0%, #FAFAFA 100%);
+  background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, #FAFAFA 100%);
+  border: 1px solid #E3E3E3;
+  -moz-box-shadow:    1px 1px 2px 0px rgba(0,0,0,0.20), inset 0px -1px 3px 0px #FFFFFF;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.20), inset 0px -1px 3px 0px #FFFFFF;
+  box-shadow:         1px 1px 2px 0px rgba(0,0,0,0.20), inset 0px -1px 3px 0px #FFFFFF;
+  display: inline-block;
+  margin-bottom: 35px !important;
+  margin-top: 25px !important;
+  padding-bottom: 15px;
+  padding-top: 35px;
+  width: 100%;
+}
+.speaker-info {
+	text-align: center;
+}
+.speaker-avatar {
+  border-radius: 120px;
+  -moz-box-shadow:    0px 0px 3px 0px #a3a3a3;
+  -webkit-box-shadow: 0px 0px 3px 0px #a3a3a3;
+  box-shadow:         0px 0px 3px 0px #a3a3a3;
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+  top: -67px;
+  border: 1px solid #c9c9c9;
+	background-color: #fff;
+	padding: 5px;
+	height: 121px;
+	width: 121px;
+}
+.speaker-name {
+	font-size: 1.6em;
+  margin-top: 70px;
+  margin-bottom: 0;
+}
+.speaker-company {
+	margin-bottom: .08em;
+	margin-top: 0;
+  a {
+    color: #999;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+.speaker-title {
+	margin-bottom: 1em;
+	margin-top: 0;
+	font-size: .9em;
+  font-weight: 300;
+  color: #999;
+  a {
+    color: #999;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+.speaker-bio {
+  line-height: 1.4;
+}
+
+.conf-participants {
+  padding-top: 55px;
+	.speaker {
+		padding-bottom: 20px;
+	}
+  .speaker-name {
+    color: $color-1;
+  }
+	.speaker-title {
+		margin-bottom: 0;
+	}
+}
+
+.team-members {
+  .team-member {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .speaker-avatar {
+    display: block;
+    position: relative;
+    top: auto;
+    margin: 0 auto 10px;
+    left: auto;
+    height: 90px;
+    width: 90px;
+  }
+  .speaker-name {
+    text-align: center;
+    margin: 0;
+    font-size: .9em;
+    color: $color-1;
+  }
+}
