@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/RogueRails/roguerails.com.png)](https://codeclimate.com/github/RogueRails/roguerails.com)
 Rogue Rails
 ====
 rails app for roguerails.com
