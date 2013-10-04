@@ -8,7 +8,7 @@ rails app for roguerails.com
 
 ## ENV Vars
     heroku config:set MAIL_USER={user name} MAIL_PASSWORD={password}
-    keroku config:set SECRET_TOKEN={secure token}
+    heroku config:set SECRET_TOKEN={secure token}
 
 ## Deploying to Heroku
     git push heroku master
