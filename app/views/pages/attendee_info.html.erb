@@ -1,0 +1,92 @@
+  <div class="row">
+    <div class="small-12 small-centered columns">
+      <%= image_tag "roguerails-logo.png", class: "logo", alt: "Rogue Rails" %>
+    </div>
+  </div>
+
+  <section id="workshop">
+    <div class="row">
+      <div class="large-12 columns">
+        <header class="section-header">
+          <h2>Workshop</h2>
+          <p class="section-dates">October 23 - 25 |
+            <strong>
+              <a href="#" data-dropdown="imperialContent">Imperial Event Center <i class="foundicon-location"></i></a>
+            </strong></p>
+          <div id="imperialContent" class="location f-dropdown content" data-dropdown-content>
+            <h4>Imperial Event Center</h4>
+            <p class="address">40 North Front Street, Medford, OR 97501</p>
+            <iframe width="325" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=40+north+front+street,+medford,+or&amp;hl=en&amp;sll=42.334151,-123.248047&amp;sspn=0.7492,1.356812&amp;hnear=40+N+Front+St,+Medford,+Jackson,+Oregon+97501&amp;t=m&amp;ie=UTF8&amp;hq=&amp;ll=42.326824,-122.873411&amp;spn=0.012691,0.027809&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <%= link_to "View Larger Map", "http://goo.gl/maps/UPrmP", class: "register-link small button", style: "width:auto; display: inline-block;", title: "Imperial Event Center, 40 North Front Street, Medford, OR", target: "_blank" %>
+          </div>
+        </header>
+        <div class="workshop-hook row">
+          <h3 class="workshop-main-tagline">Pre-Attendance Developer Info</h3>
+          <p style="text-align:center;">Here is the pre-attendance checklist, info and a short questionnaire regarding dietary restrictions.</p>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="large-10 large-centered columns">
+            <h4 style="color:#4a4a4a; text-shadow:none;">Things to bring</h4>
+            <ul>
+              <li><strong>Laptop</strong> <small>(if available)</small></li>
+              <li><strong>Preferred Periferals</strong> <small>(some devs have a certain keyboard, mouse, trackpad combo they love... otherwise, we have plenty to go around)</small></li>
+            </ul>
+          </div>
+        </div>
+        <br><hr><br>
+
+        <div class="row">
+          <div class="large-10 large-centered columns">
+            <h4 style="color:#4a4a4a; text-shadow:none;">Workshop developer tools</h4>
+            <p>These are tools the facilitators will be utilizing during demonstrations, as well as what is preferred during the pairing sessions. However, developers are more than welcome to utilize their preferred tools if agreed on by both members of the pair.</p>
+            <ul>
+              <li><strong>Sublime Text 3</strong> - <a href="http://www.sublimetext.com/3" target="_blank">free download here</a></li>
+              <li><strong>iTerm 2</strong> - <a href="http://www.iterm2.com/#/section/home" target="_blank">free download here</a> <small>(mac only)</small></li>
+              <li><strong>SourceTree</strong> - <a href="http://www.sourcetreeapp.com/" target="_blank">free download here</a> <small>(GUI interface for GIT)</small></li>
+            </ul>
+          </div>
+        </div>
+        <br><hr><br>
+
+        <div class="workshop-dev-survey row">
+          <div class="large-10 large-centered columns" style="background-color:#fff; box-shadow: 0 0 4px 0px #aaa;">
+            <div id="wufoo-q1qgx52z1498hrb" style="padding:25px 10px; margin-bottom: 30px;">
+              Fill out my <a href="https://defineyouredge.wufoo.com/forms/q1qgx52z1498hrb">online form</a>.
+            </div>
+            <script type="text/javascript">var q1qgx52z1498hrb;(function(d, t) {
+              var s = d.createElement(t), options = {
+              'userName':'defineyouredge', 
+              'formHash':'q1qgx52z1498hrb', 
+              'autoResize':true,
+              'height':'690',
+              'async':true,
+              'host':'wufoo.com',
+              'header':'show', 
+              'ssl':true};
+              s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+              s.onload = s.onreadystatechange = function() {
+              var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+              try { q1qgx52z1498hrb = new WufooForm();q1qgx52z1498hrb.initialize(options);q1qgx52z1498hrb.display(); } catch (e) {}};
+              var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+              })(document, 'script');</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer-copyright">
+    <div class="row">
+      <div class="large-12 columns">
+        <p class="copyright-info">&copy;2013 Rogue Rails, LLC</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="floating-logo">
+    <%= image_tag "roguerails-logo.png", class: "logo", alt: "Rogue Rails" %>
+  </div>
+
+  <style type="text/css">
+    #workshop { box-shadow: inset 0 2px 2px #ccc; }
+  </style>
