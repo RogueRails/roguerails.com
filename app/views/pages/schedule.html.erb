@@ -4,52 +4,28 @@
     <title>Rogue Rails</title> 
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <link rel="apple-touch-icon" href="assets/roguerails_logo-114x114.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="assets/roguerails_logo-114x114.png" />
+    
+    <%= favicon_link_tag "favicon.ico" %>
 
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+    <link rel="stylesheet" href="themes/roguerails.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
     <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
   </head> 
 
   <style>
-    header {
-      text-align: center;
-    }
     .logo {
-        max-width: 150px;
-        margin: 0 auto;
-        padding: 20px 40px;
+        max-width: 80px;
       }
-    .ui-bar-b {
-      border: 1px solid #3f6b57 /*{a-bar-border}*/;
-      background: #3f6b57 /*{a-bar-background-color}*/;
-      color: #ffffff /*{a-bar-color}*/;
-      font-weight: bold;
-      text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #444444 /*{a-bar-shadow-color}*/;
-      background-image: -webkit-gradient(linear, left top, left bottom, from( #45755f /*{a-bar-background-start}*/), to( #38604e /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
-      background-image: -webkit-linear-gradient( #45755f /*{a-bar-background-start}*/, #38604e /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
-      background-image:    -moz-linear-gradient( #45755f /*{a-bar-background-start}*/, #38604e /*{a-bar-background-end}*/); /* FF3.6 */
-      background-image:     -ms-linear-gradient( #45755f /*{a-bar-background-start}*/, #38604e /*{a-bar-background-end}*/); /* IE10 */
-      background-image:      -o-linear-gradient( #45755f /*{a-bar-background-start}*/, #38604e /*{a-bar-background-end}*/); /* Opera 11.10+ */
-      background-image:         linear-gradient( #45755f /*{a-bar-background-start}*/, #38604e /*{a-bar-background-end}*/);
+    .logo-home {
+      max-width: 150px;
+      margin-bottom: 30px;
     }
-    .ui-bar-b .ui-link-inherit {
-      color: #ffffff /*{a-bar-color}*/;
-    }
-    .ui-bar-b a.ui-link {
-      color: #7cc4e7 /*{a-bar-link-color}*/;
-      font-weight: bold;
-    }
-    .ui-bar-b a.ui-link:visited {
-        color: #2489ce /*{a-bar-link-visited}*/;
-    }
-    .ui-bar-b a.ui-link:hover {
-      color: #2489ce /*{a-bar-link-hover}*/;
-    }
-    .ui-bar-b a.ui-link:active {
-      color: #2489ce /*{a-bar-link-active}*/;
+    .ui-li-aside {
+      width: 20%;
     }
     section {
       max-width: 600px;
@@ -57,251 +33,261 @@
     }
   </style>
 <body> 
+  <div id="homepage" data-role="page" data-theme="a">
+    <div data-role="content"> 
+      <p style="text-align:center;"><%= image_tag "roguerails-logo.png", class: "logo-home", alt: "Rogue Rails" %></p>
 
-  <header>
-    <div class="small-12 small-centered columns">
-      <%= image_tag "roguerails-logo.png", class: "logo", alt: "Rogue Rails" %>
+      <p><a href="#schedule" data-role="button" data-theme="c" data-icon="arrow-r" data-iconpos="right" data-transition="slidefade">Schedule</a></p>
+    </div><!-- /content -->
+
+  </div><!-- /homepage -->
+
+  <div data-role="page" id="schedule" data-theme="a">
+
+    <div data-role="header" data-theme="a" data-position="fixed">
+      <a href="#homepage" data-icon="arrow-l" data-transition="slidefade" data-rel="back">back</a>
+      <h1 style="margin: 4px 0 2px;"><%= image_tag "RR-horizontal-logo.png", class: "logo", alt: "Rogue Rails" %></h1>
+    </div><!-- /header -->
+
+    <div data-role="content"  data-theme="b">
+
+      <section id="schedule">
+        <ul data-role="listview" data-inset="true">
+          <li data-role="list-divider">Wednesday, October 23, 2013 <!-- <span class="ui-li-count">10</span> --></li>
+          <li><a href="#">
+            <h4>Registration + Coffee</h4>
+            <p><strong>Coffee, muffins, fruit and bars available</strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>8:30</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Introduction</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>9:00</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Inception</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>10:00</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Lunch</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>12:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Iteration Planning Meeting</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>1:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Pair Programming Intro</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>2:45</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Tech Setup + Pairing</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>3:15</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Testing with Cucumber</h2>
+            <p><strong>Ryan Bates</strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>4:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>End of First Session</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>5:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Dinner + Social Hour</h2>
+            <p><strong>Location: TBD</strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>5:30</strong>PM</p>
+          </a></li>
+
+          <li data-role="list-divider">Thursday, October 24, 2013 <!-- <span class="ui-li-count">13</span> --></li>
+          <li><a href="#">
+            <h2>Coffee</h2>
+            <p><strong>Coffee, muffins, fruit and bars available</strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>8:30</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Stand Up + Set Pairs</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>8:45</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Dev Pairing</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>9:00</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Foundation Framework</h2>
+            <p><strong>Ryan Bates</strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>9:45</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Design Workshop</h2>
+            <p><strong>Trever Yarrish</strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>11:00</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Lunch</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>12:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Stand Up + Set Pairs</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>1:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Dev Pairing</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>1:15</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Frontend Frameworks</h2>
+            <p><strong>Ryan Bates</strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>2:30</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Dev Pairing</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>3:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Retrospective Meeting</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>4:30</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>End of Second Session</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>5:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Dinner + Social Hour</h2>
+            <p><strong>Location: TBD</strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>5:30</strong>PM</p>
+          </a></li>
+
+          <li data-role="list-divider">Friday, October 25, 2013 <!-- <span class="ui-li-count">14</span> --></li>
+          <li><a href="#">
+            <h2>Coffee</h2>
+            <p><strong>Coffee, muffins, fruit and bars available</strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>8:30</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Stand Up + Set Pairs</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>8:45</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Dev Pairing</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>9:00</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Deployment</h2>
+            <p><strong>Ryan Bates</strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>10:30</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Dev Pairing</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>11:00</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Lunch</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>12:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Stand Up + Set Pairs</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>1:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Dev Pairing</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>1:15</strong>AM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Circle CI Integration</h2>
+            <p><strong>David Lowe</strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>2:30</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Dev Pairing</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>3:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Retrospective Meeting</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>4:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Wrap Up + Show &amp; Tell</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>4:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>End of Third Session</h2>
+            <p><strong></strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>5:00</strong>PM</p>
+          </a></li>
+          <li><a href="#">
+            <h2>Dinner + Social Hour</h2>
+            <p><strong>Location: TBD</strong></p>
+            <p></p>
+            <p class="ui-li-aside"><strong>5:30</strong>PM</p>
+          </a></li>
+        </ul>
+      </section>
     </div>
-  </header>
-
-  <section id="schedule">
-    <ul data-role="listview" data-inset="true">
-      <li data-role="list-divider">Wednesday, October 23, 2013 <span class="ui-li-count">10</span></li>
-      <li><a href="#">
-        <h2>Registration + Coffee</h2>
-        <p><strong>Coffee, muffins, fruit and bars available</strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>8:30</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Introduction</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>9:00</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Inception</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>10:00</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Lunch</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>12:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Iteration Planning Meeting</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>1:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Pair Programming Intro</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>2:45</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Tech Setup + Pairing</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>3:15</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Testing with Cucumber</h2>
-        <p><strong>Ryan Bates</strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>4:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>End of First Session</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>5:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Dinner + Social Hour</h2>
-        <p><strong>Location: TBD</strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>5:30</strong>PM</p>
-      </a></li>
-
-      <li data-role="list-divider">Thursday, October 24, 2013 <span class="ui-li-count">13</span></li>
-      <li><a href="#">
-        <h2>Coffee</h2>
-        <p><strong>Coffee, muffins, fruit and bars available</strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>8:30</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Stand Up + Set Pairs</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>8:45</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Dev Pairing</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>9:00</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Foundation Framework</h2>
-        <p><strong>Ryan Bates</strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>9:45</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Design Workshop</h2>
-        <p><strong>Trever Yarrish</strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>11:00</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Lunch</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>12:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Stand Up + Set Pairs</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>1:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Dev Pairing</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>1:15</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Frontend Frameworks</h2>
-        <p><strong>Ryan Bates</strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>2:30</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Dev Pairing</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>3:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Retrospective Meeting</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>4:30</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>End of Second Session</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>5:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Dinner + Social Hour</h2>
-        <p><strong>Location: TBD</strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>5:30</strong>PM</p>
-      </a></li>
-
-      <li data-role="list-divider">Friday, October 25, 2013 <span class="ui-li-count">14</span></li>
-      <li><a href="#">
-        <h2>Coffee</h2>
-        <p><strong>Coffee, muffins, fruit and bars available</strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>8:30</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Stand Up + Set Pairs</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>8:45</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Dev Pairing</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>9:00</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Deployment</h2>
-        <p><strong>Ryan Bates</strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>10:30</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Dev Pairing</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>11:00</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Lunch</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>12:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Stand Up + Set Pairs</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>1:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Dev Pairing</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>1:15</strong>AM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Circle CI Integration</h2>
-        <p><strong>David Lowe</strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>2:30</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Dev Pairing</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>3:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Retrospective Meeting</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>4:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Wrap Up + Show &amp; Tell</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>4:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>End of Third Session</h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>5:00</strong>PM</p>
-      </a></li>
-      <li><a href="#">
-        <h2>Dinner + Social Hour</h2>
-        <p><strong>Location: TBD</strong></p>
-        <p></p>
-        <p class="ui-li-aside"><strong>5:30</strong>PM</p>
-      </a></li>
-    </ul>
-  </section>
-  <section id="footer-copyright">
-    <div class="row">
-      <div class="large-12 columns">
-        <p class="copyright-info">&copy;2013 Rogue Rails, LLC</p>
-      </div>
+    <div data-role="footer" data-theme="a">
+      <p class="copyright-info">&copy;2013 Rogue Rails, LLC</p>
     </div>
-  </section>
+  </div>
+  
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
