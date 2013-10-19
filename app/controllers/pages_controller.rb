@@ -5,7 +5,7 @@ class PagesController < ApplicationController
     render template: "pages/index"
   end
 
-  def dev_survey
-    render template: "pages/dev_survey"
+  def schedule
+    render layout: false
   end
 end
