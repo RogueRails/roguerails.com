@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html> 
   <head> 
-    <title>Rogue Rails</title> 
+    <title>Rogue Rails - Agile Playbook</title> 
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -37,15 +37,25 @@
     }
   </style>
 <body> 
-  <div id="homepage" data-role="page" data-theme="a">
-    <div data-role="content"> 
-      <p style="text-align:center;"><%= image_tag "roguerails-logo.png", class: "logo-home", alt: "Rogue Rails" %></p>
 
-      <p><a href="schedule" data-role="button" data-theme="c" data-icon="arrow-r" data-iconpos="right" data-transition="slidefade">Schedule</a></p>
-      <p><a href="playbook" data-role="button" data-theme="c" data-icon="arrow-r" data-iconpos="right" data-transition="slidefade">Agile Playbook</a></p>
-    </div><!-- /content -->
+  <div data-role="page" id="playbook" data-theme="a">
 
-  </div><!-- /homepage -->
+    <div data-role="header" data-theme="a" data-position="fixed">
+      <a href="#homepage" data-icon="arrow-l" data-transition="slidefade" data-rel="back">back</a>
+      <h1 style="margin: 4px 0 2px;"><%= image_tag "RR-horizontal-logo.png", class: "logo", alt: "Rogue Rails" %></h1>
+    </div><!-- /header -->
+
+    <div data-role="content"  data-theme="b">
+      <section>
+        <h2>The Agile Playbook</h2>
+        <p>The playbook will be updated shortly!</p>
+      </section>
+    </div>
+    <div data-role="footer" data-theme="a">
+      <p class="copyright-info">&copy;2013 Rogue Rails, LLC</p>
+    </div>
+  </div>
+  
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

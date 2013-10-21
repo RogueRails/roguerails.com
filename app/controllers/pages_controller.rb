@@ -12,4 +12,8 @@ class PagesController < ApplicationController
   def eventapp
     render layout: false
   end
+
+  def playbook
+    render layout: false
+  end  
 end
