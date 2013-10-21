@@ -22,7 +22,8 @@
         </header>
         <div class="workshop-hook row">
           <h3 class="workshop-main-tagline">Pre-Attendance Developer Info</h3>
-          <p style="text-align:center;">Here is the pre-attendance checklist, info and a short questionnaire regarding dietary restrictions.</p>
+          <p style="text-align:center;">Here is the pre-attendance checklist, info and a short <a href="#dietary">questionnaire regarding dietary restrictions</a>. <br>If you have any questions please contact us at <a href="mailto:info@roguerails.com?subject=Rogue Rails - Attendee Question">info@roguerails.com</a></p>
+          <a class="button small-4 push-4 columns" href="schedule">View the Event Schedule</a>
           <hr>
         </div>
         <div class="row">
@@ -38,8 +39,38 @@
 
         <div class="row">
           <div class="large-10 large-centered columns">
+            <h4 style="color:#4a4a4a; text-shadow:none;">Pre-Workshop Technical Setup</h4>
+            <p>Please follow these steps to setup the neccesary development environment for the Workshop. We will have limited time in the workshop to work through technical troubleshooting. The more attendees that come ready, the smoother it will go... thank you much!</p>
+            <ol>
+              <li><strong>Download and install dependencies</strong>
+                <ul>
+                  <li><a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">Download Virtualbox</a></li>
+                  <li><a href="http://downloads.vagrantup.com/" target="_blank">Download Vagrant</a></li>
+                </ul>
+              </li>
+              <li><strong>Clone the starter_app into whatever project directory you want using the code:</strong>
+                <pre>git clone git@github.com:RogueRails/starter_app.git</pre>
+              </li>
+              <li><strong>Install the box</strong>
+                <ul>
+                  <li>Open iTerm2 <small>(or Terminal)</small> and navigate to the starter_app directory</li>
+                  <li>Run the command: <small>(This will automatically download and boot the development environment - expect wait)</small><pre>vagrant up</pre></li>
+                </ul>
+              </li>
+              <li>After complete, ssh into the box with the following command: <pre>vagrant ssh</pre></li>
+              <li>You will need to run this command to enter the project root: <pre>cd /vagrant</pre></li>
+              <li>Then to install all default required gems run the bundle command: <pre>bundle</pre></li>
+            </ol>
+
+            <p>After completing these steps your environment is setup and ready for participation in the workshop. If you have any issues, please contact us at <a href="mailto:info@roguerails.com?Subject=Rogue Rails - Need help setting up environment">info@roguerails.com</a>.</p>
+          </div>
+        </div>
+        <br><hr><br>
+
+        <div class="row">
+          <div class="large-10 large-centered columns">
             <h4 style="color:#4a4a4a; text-shadow:none;">Workshop developer tools</h4>
-            <p>These are tools the facilitators will be utilizing during demonstrations, as well as what is preferred during the pairing sessions. However, developers are more than welcome to utilize their preferred tools if agreed on by both members of the pair.</p>
+            <p>These are tools the facilitators will be utilizing during demonstrations, as well as what is preferred during the pairing sessions. However, developers are more than welcome to utilize their preferred tools if agreed on by both members of the pair <small>(pairs rotate throughout the workshop)</small>.</p>
             <ul>
               <li><strong>Sublime Text 3</strong> - <a href="http://www.sublimetext.com/3" target="_blank">free download here</a></li>
               <li><strong>iTerm 2</strong> - <a href="http://www.iterm2.com/#/section/home" target="_blank">free download here</a> <small>(mac only)</small></li>
@@ -49,7 +80,7 @@
         </div>
         <br><hr><br>
 
-        <div class="workshop-dev-survey row">
+        <div id="dietary" class="workshop-dev-survey row">
           <div class="large-10 large-centered columns" style="background-color:#fff; box-shadow: 0 0 4px 0px #aaa;">
             <div id="wufoo-q1qgx52z1498hrb" style="padding:25px 10px; margin-bottom: 30px;">
               Fill out my <a href="https://defineyouredge.wufoo.com/forms/q1qgx52z1498hrb">online form</a>.
@@ -70,10 +101,24 @@
               try { q1qgx52z1498hrb = new WufooForm();q1qgx52z1498hrb.initialize(options);q1qgx52z1498hrb.display(); } catch (e) {}};
               var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
               })(document, 'script');</script>
-          </div>
         </div>
       </div>
-    </div>
+      <br><hr><br> 
+
+      <div class="row">
+        <div class="large-10 large-centered columns">
+          <h4 style="color:#4a4a4a; text-shadow:none;">Walking Directions from Inn at the Commons</h4>
+          <ol>
+            <li>Head southeast on N Riverside Ave toward E 6th St</li>
+            <li>Turn right onto E 6th St</li>
+            <li>Turn left onto N Front St</li>
+            <li>Destination will be on the left</li>
+          </ol>
+          <iframe style="padding: 20px; background-color: #fff; box-shadow: 0 0 3px 0 #ccc;" width="600" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=inn+at+the+commons&amp;daddr=imperial+event+center&amp;hl=en&amp;geocode=FaXihQIdriGt-CHod-4GTugZIyltoBSJOnrPVDHod-4GTugZIw%3BFefahQIdeBmt-CFZrCQsBNGAbCmdJbYuJXrPVDFZrCQsBNGAbA&amp;aq=&amp;sll=42.327689,-122.872553&amp;sspn=0.00351,0.004689&amp;dirflg=w&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=42.327807,-122.872134&amp;spn=0.002776,0.006437&amp;z=17&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=inn+at+the+commons&amp;daddr=imperial+event+center&amp;hl=en&amp;geocode=FaXihQIdriGt-CHod-4GTugZIyltoBSJOnrPVDHod-4GTugZIw%3BFefahQIdeBmt-CFZrCQsBNGAbCmdJbYuJXrPVDFZrCQsBNGAbA&amp;aq=&amp;sll=42.327689,-122.872553&amp;sspn=0.00351,0.004689&amp;dirflg=w&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=42.327807,-122.872134&amp;spn=0.002776,0.006437&amp;z=17" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+        </div>
+      </div> 
+      <br><br>   
+    </div>  
   </section>
   <section id="footer-copyright">
     <div class="row">

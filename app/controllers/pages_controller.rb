@@ -8,4 +8,8 @@ class PagesController < ApplicationController
   def schedule
     render layout: false
   end
+
+  def eventapp
+    render layout: false
+  end
 end

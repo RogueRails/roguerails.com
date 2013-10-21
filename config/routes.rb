@@ -4,4 +4,5 @@ Roguerails::Application.routes.draw do
   match 'dev_survey' => 'pages#dev_survey'
   match 'attendee_info' => 'pages#attendee_info'
   match 'schedule' => 'pages#schedule'
+  match 'eventapp' => 'pages#eventapp'
 end
