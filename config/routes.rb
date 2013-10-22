@@ -6,4 +6,6 @@ Roguerails::Application.routes.draw do
   match 'schedule' => 'pages#schedule'
   match 'eventapp' => 'pages#eventapp'
   match 'playbook' => 'pages#playbook'
+  match 'agile_process' => 'pages#agile_process'
+  match 'tdd' => 'pages#tdd'
 end
