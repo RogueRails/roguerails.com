@@ -270,6 +270,30 @@
   }
 }
 
+#stay-tuned {
+  @extend #welcome;
+  background: #fff;
+  margin-top: 10px;
+  padding-top: 30px;
+  min-height: 200px;
+  padding-bottom: 40px;
+  h2 {
+    background-color: #fff;
+    font-size: 4.375em;
+    font-weight: normal;
+    color: #CF5D4B;
+  }
+  h3 {
+    color: #4a4a4a;
+    font-size: 2.2em;
+    font-weight: lighter; 
+    text-shadow: none;
+  }
+  p, a {
+    color: #CF5D4B;
+  }
+}
+
 #schedule {
   background: #fff url('/assets/body_bg_paper.jpg') repeat;
   h2, h3, h5 {
@@ -292,6 +316,7 @@
     text-shadow: none;
   }
 }
+
 #footer {
   box-shadow: inset 0 1px 4px rgba(0,0,0,0.25);
   min-height: 200px;
@@ -299,6 +324,7 @@
   h4 {
     color: #777;
     border-bottom: 2px solid #cacaca;
+    text-align: center;
   }
 }
 .location-name {
@@ -390,6 +416,12 @@
   p {
     margin-bottom: 0;
     font-size: .9em;
+  }
+  a {
+    color: #fff;
+    &:hover {
+      color: #CF5D4B;
+    }
   }
 }
 
