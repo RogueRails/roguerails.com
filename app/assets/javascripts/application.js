@@ -6,6 +6,7 @@
 //= require jquery.scrollTo
 //= require jquery.localscroll-1.2.7-min
 //= require vendor/custom.modernizr.js
+//= require jquery.peelback
 //= require scripts
 
 $(function(){ $(document).foundation(); });

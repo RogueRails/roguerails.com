@@ -1,0 +1,368 @@
+  <div class="row">
+		<div class="small-12 small-centered columns">
+      <%= image_tag "roguerails-logo.png", class: "logo", alt: "Rogue Rails" %>
+		</div>
+	</div>
+
+	<div class="main-navigation hide-for-small">
+    <nav class="row">
+      <ul class="small-block-grid-5">
+        <li><%= link_to "Welcome",  "#welcome",   title: "" %></li>
+        <li><%= link_to "Workshop", "#workshop",  title: "" %></li>
+        <li><%= link_to "Conference","#conference", title: "" %></li>
+        <li><%= link_to "Sponsors", "#sponsors",  title: "" %></li>
+        <li><a href="#welcome" class="register-link small button" target="_blank">Register Now</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section id="welcome">
+    <div class="row">
+      <div class="large-12 columns">
+        <div id="greeting" class="twelve columns">
+          <h2 class="intro-statement">A Premier <span><strong>Ruby on Rails</strong></span><br/>
+              Workshop and Conference!</h2>
+          <div class="the-descriptors" style="display:none;">
+            <span style="width: 150px;">Agile</span>
+            <span style="width: 100px;">TDD</span>
+            <span style="width: 470px;">Pair Programming</span>
+            <span style="width: 355px;">Ruby on Rails</span>
+          </div>
+        </div>
+        <h4 class="date">October 23 - 26, 2013 &bullet; Southern Oregon</h4>
+        <div class="registration">
+          <div class="row">
+            <div class="workshop-reg large-5 columns">
+              <h3>The Workshop</h3>
+              <h4>
+                3 Insanely Great Days of Rails 4<br>
+                Featuring <strong>Ryan Bates</strong> of <strong>Railscasts</strong>
+              </h4>
+              <p class="date">October 23 - 25</p>
+              <h4>Attend the <strong>Workshop</strong> for only <strong style="font-size:1.3em;">$899</strong></h4>
+              <p style="text-align:center; font-size:.8em; margin-top: -2px; margin-bottom: 20px;line-height:10px;">(includes a <strong>FREE</strong> Pass to the Conference)</p>
+            </div>
+
+            <div class="conference-reg large-5 columns">
+              <h3>The Conference</h3>
+              <h4>
+                An 'Open Space' Agile Summit<br>
+                Featuring <strong>Kent Beck</strong>, father of <strong>Extreme Programming</strong>
+              </h4>
+              <p class="date">October 26</p>
+              <h4 style="margin-bottom:35px;">Attend the <strong>Conference</strong> for only <strong style="font-size:1.3em;">$179</strong></h4>
+            </div>
+          </div>
+          <div class="row">
+            <a class="register-link large button large-7 large-centered columns" href="https://codingzeal.webconnex.com/roguerails2013" target="_blank">
+                <span>Seating is limited</span><br>Register Now
+              </a>
+          </div>
+          <div class="row">
+            <p class="large-12 columns" style="text-align: center; margin-top: -35px;"><strong style="font-size:20px;">Bring your team. Group discounts for 3 or more attendees.</strong><br>For student discounts, send your request to <a href="mailto:info@roguerails.com?Subject=Student%20Discount">info@roguerails.com</a></p>
+          </div>
+        </div>
+        <ul class="social-icons row">
+          <li class="large-3 columns small-6"><a href="https://twitter.com/roguerails" class="icon twitter" target="_blank">Follow Rogue Rails on<br>Twitter</a></li>
+          <li class="large-3 pull-6 columns small-6"><a href="http://lanyrd.com/2013/roguerails/" class="icon lanyrd" target="_blank">Track Rogue Rails on<br>Lanyrd</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="workshop">
+    <div class="row">
+      <div class="large-12 columns">
+        <header class="section-header">
+          <h2>Workshop</h2>
+          <p class="section-dates">October 23 - 25 |
+            <strong>
+              <a href="#" data-dropdown="imperialContent">Imperial Event Center <i class="foundicon-location"></i></a>
+            </strong></p>
+          <div id="imperialContent" class="location f-dropdown content" data-dropdown-content>
+            <h4>Imperial Event Center</h4>
+            <p class="address">40 North Front Street, Medford, OR 97501</p>
+            <iframe width="325" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=40+north+front+street,+medford,+or&amp;hl=en&amp;sll=42.334151,-123.248047&amp;sspn=0.7492,1.356812&amp;hnear=40+N+Front+St,+Medford,+Jackson,+Oregon+97501&amp;t=m&amp;ie=UTF8&amp;hq=&amp;ll=42.326824,-122.873411&amp;spn=0.012691,0.027809&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <%= link_to "View Larger Map", "http://goo.gl/maps/UPrmP", class: "register-link small button", style: "width:auto; display: inline-block;", title: "Imperial Event Center, 40 North Front Street, Medford, OR", target: "_blank" %>
+          </div>
+        </header>
+        <div class="workshop-hook row">
+          <h3 class="workshop-main-tagline">Three Days of Immersive Agile Training</h3>
+          <p class="workshop-sub-tagline">Dive In. <strong>Iterate.</strong> Deliver</p>
+        </div>
+        <div class="workshop-desc row">
+          <div class="large-5 columns" style="text-align:center;">
+            <img src="assets/pair-programming-rails_4.png" alt="Workshop graphic" style="width:80%;">
+          </div>
+          <div class="workshop-desc-info large-7 columns">
+            <p>
+              Learn the agile practices from the superheroes at ZEAL<!-- person that created them, Kent Beck -->
+              and build a Ruby on Rails 4 project led by <a href="http://railscasts.com/" target="railscasts">Railscasts</a>&#39; own <a href="https://twitter.com/rbates" target="twitter">Ryan Bates</a>.
+            </p>
+            <ul class="workshop-what-list">
+              <li>Pair Programming</li>
+              <li>Test-Driven Development</li>
+              <li>Full Stack Teams</li>
+              <li>Effective Meetings <span>(Iteration Planning, Standups, Retrospectives)</span></li>
+              <li>User Stories &amp; Backlog Management</li>
+              <li>Building a Minimum Viable Product</li>
+              <li>Integrating Design in the Agile Process</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: rgba(0,0,0,0.06); box-shadow: inset 0 1px 4px rgba(0,0,0,0.25); margin-top: 40px; padding-bottom: 40px;">
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="workshop-facilitators">
+          <h3>Learn from...</h3>
+          <article class="speaker row">
+            <div class="large-3 columns speaker-info">
+              <%= image_tag "ryan-bates-sq.jpg", class: "speaker-avatar", alt: "Ryan Bates" %>
+              <h5 class="speaker-name">Ryan Bates</h5>
+            </div>
+            <div class="large-8 columns">
+              <h6 class="speaker-title">Owner &amp; Producer | <strong><%= link_to "Railscasts", "http://www.railscasts.com", title: "Railscasts" %></strong></h6>
+              <p class="speaker-bio">Ryan helps thousands of developers learn Ruby on Rails, as well as javascript frameworks and all things Rails-related, on his self-produced screencast site, <a href="http://www.railscasts.com" target="_blank">Railscasts</a>. Ryan is excited to bring his teaching skills into a live in-person workshop for the first time ever!</p>
+            </div>
+          </article>
+
+          <!-- <article class="speaker row">
+            <div class="large-3 columns speaker-info">
+              <%= image_tag "kent-beck-sq.jpg", class: "speaker-avatar", alt: "Kent Beck" %>
+              <h5 class="speaker-name">Kent Beck</h5>
+            </div>
+            <div class="large-8 columns">
+              <h6 class="speaker-title">Author &amp; Developer | <strong><%= link_to "Facebook", "http://www.facebook.com", title: "Facebook" %></strong></h6>
+              <p class="speaker-bio">Kent Beck is the creator of <%= link_to "Extreme Programing", "#" %> and <%= link_to "Test Driven Development", "#" %>, as well as (alphabetically) the first signatory of the <%= link_to "Agile Manefesto", "#" %>. He has written several books on development that have pushed the industry forward. Do not miss this rare opportunity to work directly with Kent.</p>
+            </div>
+          </article> -->
+
+          <article class="speaker row">
+            <div class="large-3 columns speaker-info">
+              <%= image_tag "zeal.jpg", class: "speaker-avatar", alt: "ZEAL" %>
+              <h5 class="speaker-name">The ZEAL Team</h5>
+            </div>
+            <div class="large-8 columns">
+              <h6 class="speaker-title">Rob, Adam, Trever &amp; Sean | <strong><%= link_to "Zeal", "http://www.codingzeal.com", title: "Zeal" %></strong></h6>
+              <p class="speaker-bio"><a href="http://codingzeal.com/" target="zeal">ZEAL</a> is a dev studio built on a passion for Rails, TDD, pair programming, and the agile methodologies. Zeal's desire to spread this knowledge and passion inspired the creation of the Rogue Rails workshop and conference.</p>
+              <div class="team-members row">
+                <div class="team-member large-3 small-6 columns">
+                  <%= image_tag "rob-head.jpg", class: "speaker-avatar", alt: "Rob Head" %>
+                  <h6 class="speaker-name"><a href="https://twitter.com/roberthead" target="rob">Rob Head</a></h6>
+                </div>
+                <div class="team-member large-3 small-6 columns">
+                  <%= image_tag "adam-cuppy.jpg", class: "speaker-avatar", alt: "Adam Cuppy" %>
+                  <h6 class="speaker-name"><a href="https://twitter.com/AdamCuppy" target="adam">Adam Cuppy</a></h6>
+                </div>
+                <div class="team-member large-3 small-6 columns">
+                  <%= image_tag "trever-yarrish.jpg", class: "speaker-avatar", alt: "Trever Yarrish" %>
+                  <h6 class="speaker-name"><a href="https://twitter.com/treveryarrish" target="trever">Trever Yarrish</a></h6>
+                </div>
+                <div class="team-member large-3 small-6 columns">
+                  <%= image_tag "sean-culver.jpg", class: "speaker-avatar", alt: "Sean Culver" %>
+                  <h6 class="speaker-name"><a href="https://twitter.com/seanculver" target="sean">Sean Culver</a></h6>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="conference">
+    <div class="row">
+      <div class="large-12 columns">
+        <header class="section-header">
+          <h2>Conference</h2>
+          <p class="section-dates">October 26 |
+            <strong>
+              <a href="#" data-dropdown="bighamContent">Bigham Knoll Campus <i class="foundicon-location"></i></a>
+            </strong></p>
+          <div id="bighamContent" class="location f-dropdown content" data-dropdown-content>
+            <h4>Bigham Knoll Campus</h4>
+            <p class="address">525 Bigham Knoll, Jacksonville, OR 97530</p>
+            <iframe width="325" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=525+Bigham+Knoll+Jacksonville,+OR+97530&amp;hl=en&amp;sll=42.315098,-122.963082&amp;sspn=0.093678,0.169601&amp;hnear=525+Bigham+Knoll+Dr,+Jacksonville,+Jackson,+Oregon+97530&amp;t=m&amp;ie=UTF8&amp;hq=&amp;ll=42.314639,-122.961259&amp;spn=0.006347,0.013905&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <%= link_to "View Larger Map", "http://goo.gl/maps/VDYRG", class: "register-link small button", style: "width:auto; display: inline-block;", title: "Bigham Knoll Campus, 525 Bigham KNoll Dr, Jacksonville, OR", target: "_blank" %>
+          </div>
+        </header>
+        <div class="conf-hook row">
+          <h3 class="conf-main-tagline large-12">Iterating on Agile: What's Next?<br>Be part of the conversation.</h3>
+          <p class="conf-sub-tagline">Join agile leaders and some of the biggest contributors in the development community in fresh conversations about Agile Development.  The <a href="http://agilemanifesto.org/" target="_blank">Agile Manifesto</a> was written 12 years ago.  What have we learned?</p>
+        </div>
+        <div class="conf-desc row">
+          <div class="conf-desc-info large-7 columns">
+            <p>In this <a href="http://en.wikipedia.org/wiki/Open-space_technology" target="_blank">Open Space</a> style conference, you will have a rare opportunity to contribute to and learn from conversations with people like <a href=
+            "http://en.wikipedia.org/wiki/Kent_Beck" target="_blank">Kent Beck</a>. This is not a conference where you sit passively for long presentations.  It is a meeting of the minds to discuss the present and future of Agile Development.</p>
+            <p><strong>Some of the discussions that will take place:</strong></p>
+            <ul class="conf-what-list">
+              <li>When is pair programming the "right" choice?</li>
+              <li>What about designers and multi-discipline pairing?</li>
+              <li>When should rules be broken?</li>
+              <li>What is the value of working "full stack"?</li>
+              <li>How can we thrive in a collaborative world?</li>
+              <li>How should Agile Development evolve?</li>
+            </ul>
+          </div>
+          <img src="assets/how-agile.png" class="large-5 columns" alt="Conviening Question: How agile is Agile?">
+        </div>
+        <div class="row">
+          <p class="footnote">Come ready with your discussion question or topic!</p>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: rgba(0,0,0,0.06); box-shadow: inset 0 1px 4px rgba(0,0,0,0.25); margin-top: 40px; padding-bottom: 40px;">
+      <div class="conf-participants">
+        <div class="row">
+          <h3>Conference Participants</h3>
+          <div class="large-4 columns">
+            <article class="speaker">
+              <div class="large-12 columns speaker-info">
+                <%= image_tag "kent-beck-sq.jpg", class: "speaker-avatar", alt: "Kent Beck" %>
+                <h5 class="speaker-name">Kent Beck</h5>
+                <h6 class="speaker-title">Author &amp; Developer</h6>
+                <h6 class="speaker-company"><%= link_to "Facebook", "http://www.facebook.com", title: "Facebook" %></h6>
+              </div>
+              <div class="large-6 columns" style="display: none;">
+                Kent Beck is the creator of <%= link_to "Extreme Programing", "#" %> and <%= link_to "Test Driven Development", "#" %>, as well as the first signatory of the <%= link_to "Agile Manefesto", "#" %>. He has written several books on development that have pushed the industry forward. Do not miss this rare opportunity to work directly with Kent.
+              </div>
+            </article>
+          </div>
+          <div class="large-4 columns">
+            <article class="speaker large-4 columns">
+              <div class="large-12 columns speaker-info">
+                <%= image_tag "sarah-mei-bw.jpg", class: "speaker-avatar", alt: "Sarah Mei" %>
+                <h5 class="speaker-name">Sarah Mei</h5>
+                <h6 class="speaker-title">Developer &amp; Speaker</h6>
+                <h6 class="speaker-company"><%= link_to "Pivotal Labs", "http://www.pivotallabs.com", title: "Pivotal Labs" %></h6>
+              </div>
+              <div class="large-6 columns" style="display: none;">
+                Sarah is a senior developer at <%= link_to "Pivotal Labs", "http://www.pivotallabs.com", title: "Sarah Mei" %> and co-founder of <%= link_to "RailsBridge", "#" %>, a non-profit organization dedicated to keeping Ruby on Rails communities friendly, vibrant and welcoming to people of all backgrounds.
+              </div>
+            </article>
+          </div>
+          <div class="large-4 columns">
+            <article class="speaker large-4 columns">
+              <div class="large-12 columns speaker-info">
+                <%= image_tag "ryan-bates-sq.jpg", class: "speaker-avatar", alt: "Ryan Bates" %>
+                <h5 class="speaker-name">Ryan Bates</h5>
+                <h6 class="speaker-title">Owner &amp; Producer</h6>
+                <h6 class="speaker-company"><%= link_to "Railscasts", "http://www.railscasts.com", title: "Railscasts" %></h6>
+              </div>
+              <div class="large-6 columns" style="display: none;">
+                Ryan helps thousands of developers learn Ruby on Rails, as well as javascript frameworks and all things Rails-related, on his self-produced screencast site, <a href="http://www.railscasts.com" target="_blank">Railscasts</a>. Ryan is excited to bring his teaching skills into a live in-person workshop for the first time ever!
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsors">
+    <div class="row">
+      <header class="section-header">
+        <h2>Sponsors</h2>
+      </header>
+    </div>
+    <div class="row">
+      <h3>Now accepting sponsorships!</h3>
+      <p style="text-align:center;">If you are interested in sponsoring Rogue Rails, download the <a href="downloads/RR-Sponsorship_Package-2013.pdf">Sponsorship Prospectus</a> and email us at <a href="mailto:info@roguerails.com?Subject=Rogue%20Rails%20Sponsorship%20Opportunities">info@roguerails.com</a></p>
+    </div>
+    <div class="row">
+      <div class="gold sponsors">
+        <h3>Gold Sponsors</h3>
+        <div class="large-4 columns">
+          <div class="sponsor">
+            <a href="http://www.codingzeal.com" target="_blank" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-top" data-width="250" title="ZEAL is a dev studio built on a passion for Rails, TDD, pair programming, and the agile methodologies."><img src="assets/sponsors/zeal_logo.png" alt="ZEAL"></a>
+          </div>
+        </div>
+        <div class="large-4 columns">
+          <div class="sponsor">
+            <a href="http://www.mandrill.com" target="_blank" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-top" data-width="250"  title="Mandrill is a scalable and affordable email infrastructure service, with all the marketing-friendly analytics tools you’ve come to expect from MailChimp."><img src="assets/sponsors/mandrill_logo.png" alt="Mandrill by MailChimp"></a>
+          </div>
+        </div>
+        <div class="large-4 columns">
+          <div class="sponsor">
+            <a href="http://www.ninefold.com" target="_blank" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-top" data-width="250"  title="Built for Rails. Easy app deployment. Better app performance."><img src="assets/sponsors/ninefold_logo.png" alt="Ninefold"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="silver sponsors">
+        <h3>Silver Sponsors</h3>
+        <div class="large-3 columns">
+          <div class="sponsor">
+            <a href="http://www.railscasts.com" target="_blank" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-top" data-width="250" title="RailsCasts is produced by Ryan Bates. Episodes feature tips and tricks with Ruby on Rails. The screencasts are short and focus on one technique so you can quickly move on to applying it to your own project."><img src="assets/sponsors/railscasts_logo.png" alt="Railscasts"></a>
+          </div>
+        </div>
+        <div class="large-3 columns">
+          <div class="sponsor">
+            <a href="http://www.pivotallabs.com" target="_blank" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-top" data-width="250" title="Pivotal Labs been at the forefront of agile development for more than two decades building highly reliable, scalable software for innovative industry leaders and emerging companies across a number of industries."><img src="assets/sponsors/pivotal-labs_logo.png" alt="Pivotal Labs"></a>
+          </div>
+        </div>
+        <div class="large-3 columns">
+          <div class="sponsor">
+            <a href="http://www.airpair.com" target="_blank" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-top" data-width="250" title="Better Software, Faster. Connect with developers for real-time help via video &amp; screen sharing."><img src="assets/sponsors/airpair_logo.png" alt="AirPair"></a>
+          </div>
+        </div>
+        <div class="large-3 columns">
+          <div class="sponsor">
+            <a href="https://circleci.com/" target="_blank" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-top" data-width="250" title="CircleCI gives web developers powerful Continuous Integration and Deployment with easy setup and maintenance."><img src="assets/sponsors/circleci_logo.png" alt="CircleCi"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="bronze sponsors">
+        <h3>Bronze Sponsors</h3>
+        <div class="large-4 columns">
+          <div class="sponsor">
+            <a href="http://www.defineyouredge.com" target="_blank"><img src="assets/sponsors/dye_logo.png" alt="Define Your Edge"></a>
+          </div>
+        </div>
+        <div class="large-4 columns">
+          <div class="sponsor">
+            <a href="http://www.codeclimate.com" target="_blank"><img src="assets/sponsors/code-climate_logo.png" alt="Code Climate"></a>
+          </div>
+        </div>
+        <div class="large-4 columns">
+          <div class="sponsor">
+            <a href="http://community.github.com" target="_blank"><img style="max-width:178px;" src="assets/sponsors/github_logo.png" alt="Github Community"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <footer>
+      <div class="row">
+        <div class="large-4 columns">
+          <h4>Where to Stay</h4>
+          <p class="location-name"><a href="http://innatthecommons.com/" target="_blank">Inn at the Commons</a></p>
+          <p class="location-desc">Mention the Rogue Rails event to receive a discounted rate, complimentary breakfast, and airport shuttle.</p>
+          <p class="location-phone">Tel: 866-779-5811</p>
+        </div>
+        <div class="large-4 pull-3 columns">
+          <h4>Contact Rogue Rails</h4>
+          <p class="company-email"><a href="mailto:info@roguerails.com?subject=From the Website">info@roguerails.com</a></p>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <section id="footer-copyright">
+    <div class="row">
+      <div class="large-12 columns">
+        <p class="copyright-info">&copy;2013 Rogue Rails, LLC</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="floating-logo">
+    <%= image_tag "roguerails-logo.png", class: "logo", alt: "Rogue Rails" %>
+  </div>
